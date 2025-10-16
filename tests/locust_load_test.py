@@ -2,7 +2,6 @@ import random
 
 from locust import HttpUser, between, task
 
-
 def get_random_features():
     return {
         "customer_id": random.randint(1, 100000),
