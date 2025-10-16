@@ -98,7 +98,7 @@ class Preprocessor:
         """
 
         with engine.connect() as conn:
-            data = pd.read_sql(q, conn=conn.connection)
+            data = pd.read_sql(q, con=conn.connection)
 
         if data.empty:
             raise ValueError("Fetched data is empty! :(")
